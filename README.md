@@ -1,4 +1,4 @@
-This is a [PayByBit](https://paybybit.netlify.app/) project frontend.
+This is a [PinchPayer](https://pinchpayer.netlify.app/) project frontend.
 
 ## Getting Started
 

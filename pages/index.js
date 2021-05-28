@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>PayByBit - Pay Small Small</title>
+        <title>PinchPayer - Pay Small Small</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -88,9 +88,13 @@ const Home = () => {
                     milestone payment options for products and services you
                     desire to own.
                   </p>
-                  <PrimaryButton className="mb-0 mb-md-5">
-                    Create Account
-                  </PrimaryButton>
+                  <Link href="/signup">
+                    <a>
+                      <PrimaryButton className="mb-0 mb-md-5">
+                        Create Account
+                      </PrimaryButton>
+                    </a>
+                  </Link>
                 </div>
               </Col>
               <Col xs={12} md={6}>
@@ -181,7 +185,7 @@ const Home = () => {
                 <p className="bigP mt-3">
                   No need to wait until you get the full amount for your orders.
                   <br />
-                   You can order now, own it and pay with flexible bit payment
+                  You can order now, own it and pay with flexible bit payment
                   options.
                 </p>
               </Col>
@@ -202,13 +206,11 @@ const Home = () => {
                   </h4>
                   <p className="mt-3">
                     No need to wait until you get the full amount for your
-                    orders.  You can order now, own it and pay with flexible bit
+                    orders. You can order now, own it and pay with flexible bit
                     payment options.
                   </p>
                   <Link href="#">
-                    <a href="#" className="mt-4 mb-4">
-                      Check More
-                    </a>
+                    <a className="mt-4 mb-4">Check More</a>
                   </Link>
                 </div>
               </Col>
@@ -231,9 +233,7 @@ const Home = () => {
                     protection.
                   </p>
                   <Link href="#">
-                    <a href="#" className="mt-4">
-                      Check More
-                    </a>
+                    <a className="mt-4">Check More</a>
                   </Link>
                 </div>
               </Col>
@@ -256,11 +256,120 @@ const Home = () => {
                     barrier.
                   </p>
                   <Link href="#">
-                    <a href="#" className="mt-4">
-                      Check More
-                    </a>
+                    <a className="mt-4">Check More</a>
                   </Link>
                 </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className={styles.shop}>
+          <Container>
+            <Row>
+              <Col xs={12}>
+                <h2 className="">Instant Shop</h2>
+                <p className="bigP mt-3">
+                  No item on your wishlist and cart pages will be unordered.
+                  <br />
+                  Pinchpayer enables you to shop & own luxury items with
+                  flexible payment plans that fit yourbudget.
+                </p>
+              </Col>
+            </Row>
+            <Row className="mt-4">
+              <Col xs={12} md={5}>
+                <Link href="#">
+                  <a>
+                    <div className={styles.bigproduct}>
+                      <div className={styles.bigtitle}>
+                        <div className="rotate">Furnitures</div>
+                      </div>
+                      <div className="d-flex align-items-center justify-content-center w-100 p-3">
+                        <img
+                          className="img-fluid"
+                          src="images/chair2.png"
+                          alt="funiture"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+              </Col>
+              <Col xs={12} md={7}>
+                <Row>
+                  <Col xs={12} md={6} className="mt-4 mt-md-0">
+                    <Link href="#">
+                      <a>
+                        <div className={styles.smallproduct}>
+                          <div className={styles.smalltitle}>
+                            <div className="rotate">Home & Offices</div>
+                          </div>
+                          <div className="d-flex align-items-center justify-content-center w-100 p-3">
+                            <img
+                              className="img-fluid"
+                              src="images/chair3.png"
+                              alt="funiture"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
+                  </Col>
+                  <Col xs={12} md={6} className="mt-4 mt-md-0">
+                    <Link href="#">
+                      <a>
+                        <div className={styles.smallproduct}>
+                          <div className={styles.smalltitle}>
+                            <div className="rotate">Home & Offices</div>
+                          </div>
+                          <div className="d-flex align-items-center justify-content-center w-100 p-3">
+                            <img
+                              className="img-fluid"
+                              src="images/bridge.png"
+                              alt="funiture"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
+                  </Col>
+                </Row>
+                <Row className="mt-4">
+                  <Col xs={12} md={6}>
+                    <Link href="#">
+                      <a>
+                        <div className={styles.smallproduct}>
+                          <div className={styles.smalltitle}>
+                            <div className="rotate">Fashion</div>
+                          </div>
+                          <div className="d-flex align-items-center p-3 w-100 justify-content-center">
+                            <img
+                              className="img-fluid"
+                              src="images/shoe.png"
+                              alt="funiture"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
+                  </Col>
+                  <Col xs={12} md={6} className="d-flex">
+                    <div className="text-center my-auto mx-auto">
+                      <h4 className="mt-5 mt-md-0">See all products</h4>
+                      <p className="mb-5 mt-3">
+                        New to Pinchpayer?{" "}
+                        <Link href="/signup">
+                          <a>Sign up</a>
+                        </Link>
+                      </p>
+                      <Link href="/shop">
+                        <a>
+                          <PrimaryButton>SHOP NOW</PrimaryButton>
+                        </a>
+                      </Link>
+                    </div>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </Container>
@@ -279,10 +388,12 @@ const Home = () => {
               </Col>
               <Col xs={12} md={3}>
                 <div className="h-100 d-flex justify-content-center mt-3 mt-md-0">
-                  <Link href="#" passHref className="my-auto">
-                    <PrimaryButton className="my-auto">
-                      Create Account
-                    </PrimaryButton>
+                  <Link href="/signup" className="my-auto">
+                    <a>
+                      <PrimaryButton className="my-auto">
+                        Create Account
+                      </PrimaryButton>
+                    </a>
                   </Link>
                 </div>
               </Col>

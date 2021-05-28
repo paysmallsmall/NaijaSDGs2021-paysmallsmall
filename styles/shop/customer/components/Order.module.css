@@ -1,0 +1,128 @@
+.orderbox {
+  margin-top: 15px;
+}
+
+.orderbox .order {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 15px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  display: flex;
+  align-items: center;
+  /* margin-top: 15px; */
+}
+
+.orderbox .order:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.orderbox .order .image {
+  background-color: var(--light-blue);
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.orderbox .order .image img {
+  height: 30px;
+  width: 30px;
+}
+
+.orderbox .order .details {
+  flex-grow: 1;
+}
+
+.orderbox .order .details .name {
+  font-weight: 500;
+}
+
+.orderbox .order .details .id {
+  font-size: 0.8rem;
+}
+
+.orderbox .order .price {
+  width: 20%;
+}
+
+.orderbox .order .date {
+  width: 20%;
+}
+
+.orderbox .order .status {
+  width: 15%;
+}
+
+.orderbox .history {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: none;
+  padding: 1.25rem;
+  margin: 0px 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  font-size: 0.9rem;
+}
+
+.orderbox .history .head {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.orderbox .history .items {
+  padding-bottom: 10px;
+}
+
+.orderbox .history .items .item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.orderbox .history .deliveries {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.orderbox .history .deliveries .delivery {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.orderbox .history .payments {
+  padding-bottom: 10px;
+}
+
+.orderbox .history .payments .paid {
+  background-color: #a6eaff;
+}
+
+.orderbox .history .payments .failed {
+  background-color: #ffc9c9;
+}
+
+.orderbox .history .payments .payment {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}

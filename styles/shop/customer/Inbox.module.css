@@ -1,0 +1,81 @@
+.inbox {
+  padding-bottom: 30px;
+}
+
+.inbox h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--deep-blue);
+}
+
+.inbox .messages .messageBox {
+  cursor: pointer;
+  border-bottom: none;
+}
+
+.inbox .messages .messageBox:hover {
+  border-left: 5px solid var(--light-blue);
+  /* border-right: 3px solid var(--light-blue); */
+}
+
+.inbox .messages .messageBox:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.inbox .messages .messageBox .message {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* .inbox .messages a {
+  color: #000000;
+  text-decoration: none;
+} */
+
+.inbox .messages .messageBox .message .type {
+  width: 10%;
+  font-weight: 500;
+}
+
+.inbox .messages .messageBox .message .image {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inbox .messages .messageBox .message .intro {
+  flex-grow: 1;
+}
+
+.inbox .messages .messageBox .message .date {
+  /* width: 10%; */
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .inbox .messages .messageBox .message .type {
+    flex-grow: 1;
+  }
+  .inbox .messages .messageBox .message .intro {
+    display: none;
+  }
+}

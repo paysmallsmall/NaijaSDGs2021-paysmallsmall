@@ -1,0 +1,70 @@
+.brands {
+  margin-top: 15px;
+}
+
+.brands .content {
+  padding: 0 7px;
+}
+
+.brands .content .top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brands .content .top .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c7c7c7;
+  border-right: none;
+  padding: 15px;
+  width: calc(100% / 6);
+}
+
+.brands .content .top .brand:nth-child(6),
+.brands .content .top .brand:last-child {
+  border-right: 1px solid #c7c7c7;
+}
+
+.brands .content .down {
+  display: flex;
+}
+
+.brands .content .down .brand {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c7c7c7;
+  border-right: none;
+  border-top: none;
+  padding: 15px;
+  width: calc(100% / 6);
+}
+
+.brands .content .down .brand:last-child {
+  border-right: 1px solid #c7c7c7;
+  /* border-top: 1px solid grey; */
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .brands .content .top .brand {
+    width: calc(100% / 4);
+  }
+  .brands .content .top .brand:nth-child(4),
+  .brands .content .top .brand:nth-child(8),
+  .brands .content .top .brand:last-child {
+    border-right: 1px solid #c7c7c7;
+  }
+}

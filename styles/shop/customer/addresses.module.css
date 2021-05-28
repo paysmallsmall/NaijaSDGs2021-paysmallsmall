@@ -1,0 +1,193 @@
+.addresses {
+  padding-bottom: 50px;
+}
+
+.addresses h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--deep-blue);
+  margin-bottom: 0px;
+  margin-top: 30px;
+  line-height: 1;
+}
+
+.addresses .header p {
+  font-size: 0.9rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.addresses .form {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.addresses .form form {
+  max-width: 400px;
+}
+
+.addresses .form .input {
+  height: 46px;
+  font-size: 0.9rem;
+}
+
+.addresses .cardsholder {
+  margin-top: 10px;
+}
+
+.addresses .cardsholder .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addresses .cardsholder .plusbox {
+  margin-top: 15px;
+  width: calc(25% - 15px);
+  align-items: center;
+  background-color: var(--lighter-blue);
+  margin-right: 15px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  cursor: pointer;
+}
+
+.addresses .cardsholder .plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addresses .cardsholder .plus .icon {
+  font-size: 4rem;
+  color: var(--deep-blue);
+  margin-top: 15px;
+}
+
+.addresses .cardsholder .plus h4 {
+  font-size: 1rem;
+  color: var(--deep-blue);
+  margin-top: 15px;
+}
+
+.addresses .cardsholder .card {
+  margin-top: 15px;
+  width: calc(25% - 15px);
+  margin-right: 15px;
+}
+
+.addresses .cardsholder .defaultcard {
+  margin-top: 15px;
+  width: calc(25% - 15px);
+  margin-right: 15px;
+  background-color: rgba(40, 199, 25, 0.05);
+}
+
+.addresses .cardsholder .status {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.addresses .cardsholder .status .statusicon {
+  font-size: 5rem;
+  color: var(--deep-blue);
+  color: green;
+  opacity: 30%;
+}
+
+.addresses .cardsholder .status .statusiconred {
+  font-size: 5rem;
+  color: var(--deep-blue);
+  color: red;
+  opacity: 30%;
+}
+
+.addresses .cardsholder .card .head,
+.addresses .cardsholder .defaultcard .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addresses .cardsholder .card .head span,
+.addresses .cardsholder .defaultcard .head span {
+  font-size: 0.9rem;
+}
+
+.addresses .cardsholder .card .icon,
+.addresses .cardsholder .defaultcard .icon {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--deep-blue);
+}
+
+.addresses .cardsholder .card .addresses,
+.addresses .cardsholder .defaultcard .addresses {
+  font-size: 1rem;
+  padding-bottom: 0px;
+}
+
+.addresses .cardsholder .card .name,
+.addresses .cardsholder .defaultcard .name {
+  font-size: 0.9rem;
+  /* font-weight: 500; */
+  text-align: center;
+  margin-top: 15px;
+  color: var(--deep-blue);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.addresses .cardsholder .card .account,
+.addresses .cardsholder .defaultcard .account {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.addresses .cardsholder .card .default,
+.addresses .cardsholder .defaultcard .default {
+  text-align: center;
+  height: 25px;
+}
+
+.addresses .cardsholder .card .details,
+.addresses .cardsholder .defaultcard .details {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+  /* margin-top: 10px; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .addresses .cardsholder .plusbox {
+    margin-top: 15px;
+    width: 100%;
+    margin-right: 0px;
+  }
+  .addresses .cardsholder .card,
+  .addresses .cardsholder .defaultcard {
+    margin-top: 15px;
+    width: 100%;
+    margin-right: 0px;
+  }
+}

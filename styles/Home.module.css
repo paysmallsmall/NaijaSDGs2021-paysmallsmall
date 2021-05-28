@@ -266,6 +266,54 @@
   height: 100px;
 }
 
+.shop {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  background-color: #eff5ff;
+}
+
+.shop a:hover {
+  text-decoration: none;
+}
+
+.shop .bigproduct {
+  height: 525px;
+  background-color: #c7e0f5;
+  display: flex;
+}
+
+.shop .smallproduct {
+  height: 250px;
+  background-color: #c7e0f5;
+  display: flex;
+}
+
+.shop .bigtitle {
+  font-size: 36px;
+  height: 100%;
+  color: #ffffff;
+  background-color: #0076b6;
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop .smalltitle {
+  font-size: 24px;
+  height: 100%;
+  color: #ffffff;
+  background-color: #0076b6;
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .try {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -464,6 +512,19 @@
   }
   .why .overlay .shape1 {
     opacity: 0%;
+  }
+
+  .shop {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .shop .bigproduct {
+    height: 250px;
+  }
+
+  .shop .bigtitle {
+    font-size: 24px;
   }
 }
 

@@ -1,0 +1,164 @@
+.welcome {
+  display: flex;
+  height: 100vh;
+}
+
+.welcome h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--deep-blue);
+  margin-bottom: 0px;
+  margin-top: 30px;
+  line-height: 1;
+}
+
+.welcome .progress {
+  width: 350px;
+  background-color: var(--light-blue);
+  margin-right: 50px;
+  padding-left: 50px;
+}
+
+.welcome .progress .logo {
+  /* text-align: center; */
+  margin-top: 50px;
+  margin-left: 5px;
+}
+
+.welcome .progress .steps {
+  padding-top: 15px;
+  /* margin-left: 15px; */
+  margin-top: 25px;
+}
+
+.welcome .progress .steps .step {
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.welcome .progress .steps .step h5 {
+  margin-bottom: 5px;
+  color: var(--deep-blue);
+}
+
+.welcome .progress .steps .step p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+}
+
+.welcome .content {
+  position: relative;
+  flex-grow: 1;
+  /* padding-left: 50px; */
+}
+
+.welcome .content .overlay {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  position: absolute;
+  overflow: hidden;
+  z-index: -10;
+  /* padding-left: -50px; */
+}
+
+.welcome .content .overlay .circle {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: rgba(226, 226, 228, 0.9);
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  opacity: 30%;
+  z-index: -1;
+}
+
+.welcome .content .overlay .circle2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  right: 700px;
+  top: 50px;
+  z-index: -1;
+}
+
+.welcome .content .overlay .triangle {
+  width: 0;
+  height: 0;
+  border-top: 300px solid rgb(176, 206, 255, 20%);
+  border-left: 300px solid transparent;
+  position: absolute;
+  left: 200px;
+  top: 150px;
+  transform: rotate(-76.02deg);
+}
+
+.welcome .content .heading {
+  margin-bottom: 100px;
+}
+
+.welcome .content .body {
+}
+
+.welcome .content .body h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.welcome .content .body .subheader {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--deep-blue);
+  margin-bottom: 10px;
+}
+
+.welcome .content .body .form {
+  width: 500px;
+  margin-top: 25px;
+}
+
+.welcome .content .body .form .textinput {
+  min-height: 48px;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
+  .welcome .content .body .subheader {
+    font-size: 1.8rem;
+  }
+  .welcome .progress {
+    display: none;
+  }
+
+  .welcome .content .heading {
+    margin-bottom: 50px;
+  }
+  .welcome .content .body,
+  .welcome .content .heading {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .welcome .content .body h2 {
+    font-size: 1.5rem;
+  }
+}

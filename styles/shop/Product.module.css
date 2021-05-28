@@ -1,0 +1,123 @@
+.product {
+  margin: 4px;
+  width: calc(25% - 8px);
+  /* height: 373px; */
+  border: 1px solid #e0ecff;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+.product:hover {
+  border: none;
+}
+
+.product .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  height: 30px;
+  position: relative;
+}
+
+.product .heading .discount {
+  /* color: var(--blue); */
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: var(--deep-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+}
+
+.product .image {
+  width: 100%;
+  height: 200px;
+  /* background-color: brown; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product .image img {
+  max-height: 200px;
+}
+
+.product .price {
+  margin-top: 5px;
+  height: 37px;
+  text-align: center;
+}
+
+.product .price h5 {
+  font-size: 1rem;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: var(--deep-blue);
+}
+
+.product .price h6 {
+  font-size: 0.9rem;
+  margin-top: 0px;
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.product .name {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--deep-blue);
+  padding: 0px 10px;
+}
+
+.product .rating {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.product .btn {
+  margin-bottom: 10px;
+  height: 35px;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .product {
+    margin: 10px;
+
+    width: calc(50% - 20px);
+  }
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .product {
+    margin: 4px;
+    width: calc(50% - 8px);
+    margin-bottom: 10px;
+  }
+  .product .image,
+  .product .image img {
+    /* height: 150px; */
+    width: 100%;
+  }
+}

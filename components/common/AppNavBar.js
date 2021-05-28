@@ -26,7 +26,7 @@ const AppNavBar = () => {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle
-          className="text-primary"
+          className={styles.appnav}
           aria-controls="responsive-navbar-nav"
         />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -41,10 +41,8 @@ const AppNavBar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Link href="/shop">
-              <Nav.Link href="/shop" className={styles.navlink}>
-                Shop
-              </Nav.Link>
+            <Link href="/shop" passHref>
+              <Nav.Link className={styles.navlink}>Shop</Nav.Link>
             </Link>
             <Nav.Link href="#deets" className={styles.navlink}>
               Solutions
@@ -52,15 +50,16 @@ const AppNavBar = () => {
             <Nav.Link href="#deets" className={styles.navlink}>
               Products
             </Nav.Link>
-            <Link href="/login">
+            <Link href="/login" passHref>
               <Nav.Link
-                href="/login"
                 className={`${styles.navlink} mr-4 ml-0 ml-md-3 mb-3 mb-md-0`}>
                 Login
               </Nav.Link>
             </Link>
-            <Link href="/signup" passHref>
-              <PrimaryButton>Create Account</PrimaryButton>
+            <Link href="/signup">
+              <a>
+                <PrimaryButton>Create Account</PrimaryButton>
+              </a>
             </Link>
           </Nav>
         </Navbar.Collapse>

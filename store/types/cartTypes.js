@@ -1,0 +1,5 @@
+export const CART_FETCH = "CART_FETCH";
+export const CART_RESOLVED = "CART_RESOLVED";
+export const CART_ADD_ITEM = "CART_ADD_ITEM";
+export const CART_REMOVE_ITEM = "CART_REMOVE_ITEM";
+export const CART_CANCELED = "CART_CANCELED";

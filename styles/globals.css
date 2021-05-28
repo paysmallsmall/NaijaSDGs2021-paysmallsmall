@@ -1,3 +1,12 @@
+:root {
+  --lighter-blue: #eff5ff;
+  --light-blue: #c7e0f5;
+  --primary-blue: #0076b6;
+  --deep-blue: #0f1c70;
+  --black: #011b33;
+  --pp-grey: #f5f5f5;
+}
+
 html,
 body {
   padding: 0;
@@ -8,6 +17,62 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+  /* font-size: 12%; */
+  letter-spacing: 0.1em;
+
+  /*float: left;                 /* NOOOOOOOOOOOO :) */
+  /* display: inline-block;  */
+  /* use this instead of float:left */
+  /* transform: rotate(-90deg) translateY(50%);  */
+  /* Add: translateY 50% */
+  /* width: 8em;  */
+  /* same as font size (OR A BIT SMALLER) */
+  text-align: center;
+  /* to center text inside the red thing */
+  vertical-align: top;
+  /* top to "center" span... (yeah I know...) */
+  white-space: nowrap;
+}
+
+.page-item.active .page-link {
+  background-color: #0f1c70;
+  border-color: #0f1c70;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #0f1c70;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #ffffff;
+  background-color: var(--deep-blue);
 }
 
 /* h1 {
@@ -103,10 +168,10 @@ h4 {
 }
 
 @media (min-width: 1200px) {
-  a {
+  /* a {
     color: inherit;
     text-decoration: none;
-  }
+  } */
 
   h1 {
     font-size: 50px;

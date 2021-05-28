@@ -11,10 +11,10 @@ const Footer = () => {
         <Row>
           <Col xs={12} md={3}>
             <img
-              src="images/logo.png"
+              src="/images/logo.png"
               className="img-fluid"
               width="200"
-              alt="paybybit logo"
+              alt="pinchpayer logo"
             />
             <p className={styles.bluep}>info@pinchpayer.com</p>
             <p className={styles.bluep}>

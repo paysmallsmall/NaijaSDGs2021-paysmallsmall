@@ -1,0 +1,91 @@
+.main {
+  color: #282828;
+}
+
+.main .categories {
+  padding: 15px 15px;
+  background-color: var(--pp-grey);
+  height: 400px;
+}
+
+.main .categories ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.main .categories ul .icon {
+  margin-right: 5px;
+}
+
+.main .categories a {
+  color: #282828;
+  font-size: 14px;
+}
+
+.main .categories a:hover {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.main .categories li {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.main .categories li .text {
+  margin-top: 2px;
+}
+
+.main .ads1 {
+  height: 400px;
+  background-color: darkgray;
+}
+
+.main .ads2 {
+  height: 400px;
+  background-color: darkgray;
+}
+
+.main .features {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.main .features .feature {
+  background-color: var(--pp-grey);
+  font-size: 1rem;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .features .feature .icon {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.main .features .feature .text {
+  color: #282828;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .main .features .feature .icon {
+    margin-right: 0px;
+  }
+}

@@ -1,35 +1,38 @@
-
 .navlink {
-	color: #000000 !important;
-	text-shadow: none !important;
+  color: #000000 !important;
+  text-shadow: none !important;
 }
 
 .navlink a:link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .navbar-dark .navbar-toggler {
-	color: #000;
-	border-color: #000;
+  color: #000;
+  border-color: #000;
+}
+
+.appnav {
+  /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e); */
+  background-image: url("/images/icons/menu.png");
 }
 
 .signupButton {
-	/* border: 1px solid #000000; */
-	background-color: #ffffff;
-	/* color: #000000; */
-	border-radius: 30px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-right: 10px;
-	/* margin-left: 30px; */
+  /* border: 1px solid #000000; */
+  background-color: #ffffff;
+  /* color: #000000; */
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  /* margin-left: 30px; */
 }
 
 .loginButton {
-	border: 1px solid #2680EB;
-	background-color: #2680EB;
-	color: #ffffff;
-	border-radius: 30px;
-	padding-left: 30px;
-	padding-right: 30px;
+  border: 1px solid #2680eb;
+  background-color: #2680eb;
+  color: #ffffff;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-
