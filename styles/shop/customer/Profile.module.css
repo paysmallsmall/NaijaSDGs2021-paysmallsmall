@@ -1,0 +1,117 @@
+.profile {
+  /* padding: 30px; */
+}
+
+.profile .user {
+  margin-bottom: 15px;
+}
+
+.profile .user .content {
+  display: flex;
+}
+
+.profile .user .content .left {
+  min-width: 200px;
+  height: 200px;
+  background-color: var(--light-blue);
+  margin-right: 25px;
+  margin-top: 15px;
+}
+
+.profile .user .content .right {
+  margin-top: 15px;
+}
+
+.profile .user .content .right .personal {
+}
+
+.profile .user .content .right .personal .name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.profile .user .content .right .personal .status {
+  display: flex;
+  align-items: center;
+}
+
+.profile .user .content .right .personal .status .verification {
+  color: #10c387;
+}
+
+.profile .user .content .right .personal .status .date {
+  margin-left: 15px;
+  font-size: 0.9rem;
+}
+
+.profile .user .content .right .personal .phone {
+  margin-top: 10px;
+}
+
+.profile .user .content .right .personal .email {
+  margin-top: 10px;
+}
+
+.profile .user .content .right .personal .address {
+  margin-top: 10px;
+  font-size: 1rem;
+  display: flex;
+}
+
+.profile .user .content .right .personal .limits {
+  display: flex;
+  margin-top: 15px;
+}
+
+.profile .user .content .right .personal .limits .box {
+  width: 33%;
+  margin-right: 10px;
+}
+
+.profile .user .content .right .personal .limits .box .name {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.profile .user .content .right .personal .limits .box .value {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #10c387;
+}
+
+.profile .user .content .right .company .header {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.profile .user .content .right .company .companyname {
+  margin-bottom: 15px;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .profile .user .content {
+    flex-direction: column;
+  }
+  .profile .user .content .left {
+    min-width: 100px;
+    height: 100px;
+    width: 100px;
+    margin-right: 0px;
+  }
+}

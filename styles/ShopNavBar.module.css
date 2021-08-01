@@ -1,0 +1,121 @@
+.shopnav {
+  font-size: 12px;
+  color: #000000;
+  border-bottom: 1px solid #cecdcd;
+}
+
+.shopnav .top {
+  padding: 3px 0px;
+  background-color: var(--light-blue);
+}
+
+.shopnav .top a {
+  color: #000000;
+}
+
+.shopnav .top a:hover {
+  color: var(--deep-blue);
+  text-decoration: underline;
+}
+
+.shopnav .bottom {
+  padding: 15px 0px;
+  background-color: #ffffff;
+}
+
+.shopnav .bottom .form {
+  height: 46px;
+  border-radius: 10px;
+}
+
+.shopnav .bottom .form .icon {
+  border: 1px solid;
+  color: #868b90;
+  height: 46px;
+  /* border-color: var(--deep-blue); */
+  border-color: #ced4da;
+  border-right: 0px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.shopnav .bottom .form input {
+  height: 46px;
+  /* border-color: var(--deep-blue); */
+  border-color: #ced4da;
+  border-left: 0px;
+}
+
+.shopnav .bottom .form .btn {
+  border-radius: 0px 10px 10px 0px;
+  /* background-color: #ced4da; */
+  background-color: var(--deep-blue);
+  border-color: #ced4da;
+  color: #ffffff;
+}
+
+.shopnav .bottom .form input:focus {
+  outline: 0 none;
+  box-shadow: none;
+}
+
+.shopnav .bottom .cartBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.shopnav .bottom .cartBox .iconBox {
+  margin-top: 5px;
+  /* margin-left: 15px; */
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.shopnav .bottom .cartBox .iconBox .dropdown,
+.shopnav .bottom .cartBox .iconBox a,
+.shopnav .bottom .cartBox .iconBox .dropdown a {
+  font-size: 1rem;
+  color: #000000;
+  text-decoration: none;
+  /* font-weight: 500; */
+}
+
+.shopnav .bottom .cartBox .iconBox .dropdown .icon {
+  margin-right: 6px;
+}
+
+.shopnav .bottom .cartBox .iconBox .icon {
+  /* color: var(--deep-blue); */
+  color: #808080;
+}
+
+.shopnav .bottom .cartBox .iconBox .badge {
+  position: absolute;
+  right: 0px;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .shopnav .top .right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

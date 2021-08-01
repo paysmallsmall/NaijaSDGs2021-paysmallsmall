@@ -1,0 +1,186 @@
+.bank {
+  padding-bottom: 50px;
+}
+
+.bank h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--deep-blue);
+  margin-bottom: 0px;
+  margin-top: 30px;
+  line-height: 1;
+}
+
+.bank .header p {
+  font-size: 0.9rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bank .form {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.bank .form form {
+  max-width: 400px;
+}
+
+.bank .form .input {
+  height: 46px;
+  font-size: 0.9rem;
+}
+
+.bank .cardsholder {
+  margin-top: 10px;
+}
+
+.bank .cardsholder .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bank .cardsholder .plusbox {
+  margin-top: 15px;
+  width: calc(25% - 15px);
+  align-items: center;
+  background-color: var(--lighter-blue);
+  margin-right: 15px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  cursor: pointer;
+}
+
+.bank .cardsholder .plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bank .cardsholder .plus .icon {
+  font-size: 4rem;
+  color: var(--deep-blue);
+  margin-top: 15px;
+}
+
+.bank .cardsholder .plus h4 {
+  font-size: 1rem;
+  color: var(--deep-blue);
+  margin-top: 15px;
+}
+
+.bank .cardsholder .card {
+  margin-top: 15px;
+  width: calc(25% - 15px);
+  margin-right: 15px;
+}
+
+.bank .cardsholder .defaultcard {
+  margin-top: 15px;
+  width: calc(25% - 15px);
+  margin-right: 15px;
+  background-color: rgba(40, 199, 25, 0.05);
+}
+
+.bank .cardsholder .status {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.bank .cardsholder .status .statusicon {
+  font-size: 5rem;
+  color: var(--deep-blue);
+  color: green;
+  opacity: 30%;
+}
+
+.bank .cardsholder .status .statusiconred {
+  font-size: 5rem;
+  color: var(--deep-blue);
+  color: red;
+  opacity: 30%;
+}
+
+.bank .cardsholder .card .head,
+.bank .cardsholder .defaultcard .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bank .cardsholder .card .icon,
+.bank .cardsholder .defaultcard .icon {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--deep-blue);
+}
+
+.bank .cardsholder .card .bank,
+.bank .cardsholder .defaultcard .bank {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 0px;
+}
+
+.bank .cardsholder .card .name,
+.bank .cardsholder .defaultcard .name {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 15px;
+  color: var(--deep-blue);
+}
+
+.bank .cardsholder .card .account,
+.bank .cardsholder .defaultcard .account {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.bank .cardsholder .card .default,
+.bank .cardsholder .defaultcard .default {
+  text-align: center;
+  height: 25px;
+}
+
+.bank .cardsholder .card .details,
+.bank .cardsholder .defaultcard .details {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .bank .cardsholder .plusbox {
+    margin-top: 15px;
+    width: 100%;
+    margin-right: 0px;
+  }
+  .bank .cardsholder .card,
+  .bank .cardsholder .defaultcard {
+    margin-top: 15px;
+    width: 100%;
+    margin-right: 0px;
+  }
+}

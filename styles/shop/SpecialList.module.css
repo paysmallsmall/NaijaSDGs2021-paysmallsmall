@@ -1,0 +1,30 @@
+.specials {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.specials .header {
+  background-color: var(--light-blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.specials .header .title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.specials .header .link,
+.specials .header .link a {
+  color: #282828;
+}
+
+.specials .products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specials .products .page-link {
+  background-color: var(--deep-blue);
+}

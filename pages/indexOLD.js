@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>PayByBit - Pay Small Small</title>
+        <title>PinchPayer - Pay Small Small</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

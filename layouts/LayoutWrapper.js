@@ -1,9 +1,15 @@
-import DefaultLayout from "./DefaultLayout";
 import AuthLayout from "./AuthLayout";
+import CustomerLayout from "./CustomerLayout";
+import DefaultLayout from "./DefaultLayout";
+import OnboardLayout from "./OnboardLayout";
+import ShopLayout from "./ShopLayout";
 
 const layouts = {
   default: DefaultLayout,
-  auth: AuthLayout
+  auth: AuthLayout,
+  shop: ShopLayout,
+  customer: CustomerLayout,
+  onboarding: OnboardLayout,
 };
 
 const LayoutWrapper = (props) => {

@@ -1,0 +1,46 @@
+.content {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.content h5 {
+  color: var(--deep-blue);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.content ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.content .category {
+  margin-bottom: 10px;
+}
+
+.content .category li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .brands {
+  margin-bottom: 10px;
+}
+
+.content .brands .brand {
+  margin-bottom: 10px;
+}
+
+.content .productsContent .heading h4 {
+  font-size: 16px;
+}
+
+.content .productsContent .products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .productsContent .products .page-link {
+  background-color: var(--deep-blue);
+}
